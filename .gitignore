@@ -3,3 +3,4 @@
 **/*.pem
 pass.txt
 **/.vscode
+**/*.lock
