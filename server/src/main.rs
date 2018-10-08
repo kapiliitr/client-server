@@ -11,14 +11,14 @@ use std::thread;
 fn main() {
 
 let mut builder = SslAcceptor::mozilla_intermediate(SslMethod::tls()).expect("Unable to create SslAcceptorBuilder");
-builder.set_private_key_file("/home/kaagarw/client-server/key.pem", SslFiletype::PEM).unwrap();
-builder.set_certificate_chain_file("/home/kaagarw/client-server/cert.pem").unwrap();
+builder.set_private_key_file("D:/PersonalCoding/rust/client-server/key.pem", SslFiletype::PEM).unwrap();
+builder.set_certificate_chain_file("D:/PersonalCoding/rust/client-server/certificate.pem").unwrap();
 builder.check_private_key().unwrap();
 builder.clear_options(SslOptions::NO_TLSV1_3);
 builder.set_min_proto_version(Some(SslVersion::TLS1_3)).unwrap();
 let acceptor = Arc::new(builder.build());
 
-let listener = TcpListener::bind("0.0.0.0:8443").unwrap();
+let listener = TcpListener::bind("127.0.0.1:8443").unwrap();
 
 
 for stream in listener.incoming() {

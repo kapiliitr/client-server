@@ -7,7 +7,7 @@ authors = ["kaagarw"]
 criterion = "0.2"
 
 [dependencies]
-openssl = {path = "/home/kaagarw/rust-openssl/openssl"}
+openssl = {path = "D:/PersonalCoding/rust/rust-openssl/openssl"}
 
 [[bench]]
 name = "tls_benchmark"

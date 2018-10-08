@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["kaagarw"]
 
 [dependencies]
-openssl = {path = "/home/kaagarw/rust-openssl/openssl"}
+openssl = {path = "D:/PersonalCoding/rust/rust-openssl/openssl"}
