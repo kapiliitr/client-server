@@ -45,5 +45,11 @@ By default, uses RSA certificates for both client and server. Note : Specify onl
 
 `bench` : Run a small benchmark to measure time taken for client-server connection over 10000 attempts. Note : Do not run with `verbose` option.
 
+# Monitoring
 
+You can use RawCap to capture localhost traffic by running the following command.
+
+`RawCap.exe 127.0.0.1 localhost_capture.pcap`
+
+`SSKKEYLOGFILE` is generated at `client\keylog.log` to decrypt TLS 1.3 messages in WireShark.
 
