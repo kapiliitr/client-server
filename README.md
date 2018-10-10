@@ -4,6 +4,10 @@ Simple client and server in Rust over OpenSSL 1.1.1
 # Setup
 Install OpenSSL 1.1.1 and build rust-openssl against that. Steps are [here](https://github.com/sfackler/rust-openssl/tree/5948898e54882c0bedd12d87569eb4dbee5bbca7).
 
+Update `Cargo.toml` in `client` and `server` folders to point to the locally built rust-openssl crate.
+
+Path to certificate files are hardcoded in `client\src\main.rs` and `client\src\main.rs`. You may want to update those. [Here](https://msol.io/blog/tech/create-a-self-signed-ecc-certificate/) is a guide to create self-signed certificates using openssl.
+
 # Build server
 ```
 cd server
